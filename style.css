@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--Verylightgray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  height: 110vh
+}
+
+main {
+  width: 130vh;
+  height: 66vh;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+
+.card {
+  width: calc(100%/3);
+  height: 100%;
+  padding: 3em;
+}
+
+.card h2 {
+  color: var(--Verylightgray);
+  font-size: 2em;
+  font-family: "Big Shoulders Display", "cursive";
+  font-weight: 700;
+  margin-top: 1.1em;
+}
+
+.card p {
+  color: var(--Transparentwhite);
+  font-family: "Lexend Deca", "cursive";
+  font-weight: 400;
+  margin-top: 1.4em;
+}
+
+.card button {
+  margin-top: 5.7rem;
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#b1:active, #b2:active, #b3:active {
+  background-color: Transparent;
+  color: var(--Verylightgray);
+  border: 1px solid var(--Verylightgray);
+}
+
+button#b1 { color: var(--Brightorange);}
+button#b2 { color: var(--Darkcyan);}
+button#b3 { color: var(--Verydarkcyan);}
+
+.card:nth-child(1) { background-color: var(--Brightorange); border-radius: 8px 0 0 8px;}
+.card:nth-child(2) { background-color: var(--Darkcyan);}
+.card:nth-child(3) { background-color: var(--Verydarkcyan); border-radius: 0 8px 8px 0;}
+
+.attribution {
+  font-size: 11px; text-align: center;
+  margin-bottom: 5rem;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (max-width: 400px) {
+  main {
+    width: 45vh;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    height: 66vh;
+  }
+
+  .card:nth-child(1) { border-radius: 8px 8px 0 0;}
+  .card:nth-child(3) { border-radius: 0 0 8px 8px;}
+
+  .card button {
+    margin-top: 2em;
+  }
+}
