@@ -24,8 +24,8 @@ body {
 }
 
 main {
-  width: 130vh;
-  height: 66vh;
+  width: 900px;
+  height: 450px;
   display: flex;
   flex-wrap: wrap;
   border-radius: 8px;
@@ -37,7 +37,7 @@ main {
   padding: 3em;
 }
 
-.card h2 {
+.card h1 {
   color: var(--Verylightgray);
   font-size: 2em;
   font-family: "Big Shoulders Display", "cursive";
@@ -77,6 +77,7 @@ button#b3 { color: var(--Verydarkcyan);}
 
 .attribution {
   font-size: 11px; text-align: center;
+  margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
